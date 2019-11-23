@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/ocean.jpg");
+  /* background-image: url("img/ocean.jpg"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -99,7 +99,7 @@ i {
 @media screen and (max-width: 460px) {
 
   .fixed-top {
-    margin-top: -5px;
+    margin-top: -6px;
     position: sticky;
   }
 
