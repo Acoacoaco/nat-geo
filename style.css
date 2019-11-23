@@ -93,19 +93,23 @@ i {
   h6 {
     margin: 10px 0; } }
 @media screen and (max-width: 460px) {
+
   .logo {
     float: none;
-    margin: 0 auto 10px auto; 
-    position: relative;
+    margin: 0 auto 10px auto;
   }
 
   nav button {
-    width: 100%; }
+    width: 100%;
+  }
 
   .block {
-    margin-top: 3vh; }
+    margin-top: 3vh; 
+  }
 
   h1 {
-    font-size: 50px; } }
+    font-size: 50px; 
+  } 
+}
 
 /*# sourceMappingURL=style.css.map */
