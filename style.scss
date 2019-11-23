@@ -1,0 +1,151 @@
+body {
+    background-image: url("img/ocean.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: black;
+    a {
+        color: white;
+    }
+}
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+          
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+
+.logo {
+    float: left;
+    margin: 5px 30px;
+    height: 50px;
+    width: 40px;
+    border: rgb(238, 212, 62) solid 4px; 
+}
+
+.container {
+    padding-top: 100px;
+}
+
+// popracować nad tym !!
+
+.transparent-item {
+    height: 300px;
+    overflow:hidden;
+    display:block;
+}
+
+h1, h3, h6 {
+    color: white;
+}
+
+h6 {
+    margin: 10px 0 10px 27px;
+}
+
+.carousel {
+    margin-top: 70px;
+}
+
+.caption {
+    text-align: left;
+    h1 {
+        font-size: 62px;
+    }
+}
+
+p {
+    color: gray;
+}
+
+.block {
+    margin: auto;
+    margin-top: 21vh;
+    height: 25vh;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+.obrazek {
+    width: 100%;
+    margin-bottom: 2px;
+    border-top: rgb(238, 212, 62) solid 10px;
+}
+
+.btn-dark {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.phone, .home, .mail {
+    height: 30px;
+    float: left;
+    padding-right: 4px;
+}
+
+.home {
+    margin-top: 20px;
+}
+
+i {
+    color: rgb(238, 212, 62);
+    border: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.contact2, .contact3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        margin-top: 0;
+    }
+
+    .phone, .home, .mail {
+        float: none;
+    }
+    h6 {
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .logo {
+        float: none;
+        margin: 0 auto 10px auto;
+    }   
+
+    .fixed-top {
+        position: relative;
+    }
+
+    nav {
+        button {
+            width: 100%;
+        }
+    }    
+
+    .block {
+        margin-top: 3vh;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
