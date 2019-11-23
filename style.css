@@ -99,7 +99,7 @@ i {
 @media screen and (max-width: 460px) {
 
   .fixed-top {
-    margin-top: -6px;
+    margin-top: -7px;
     position: sticky;
   }
 
