@@ -99,6 +99,7 @@ i {
 @media screen and (max-width: 460px) {
 
   .fixed-top {
+    margin-top: -5px;
     position: sticky;
   }
 
@@ -113,7 +114,6 @@ i {
     margin: 10px auto;
   }
   
-
   .logo1 {
     display: none;
   }
