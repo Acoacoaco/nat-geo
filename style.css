@@ -95,10 +95,9 @@ i {
 @media screen and (max-width: 460px) {
   .logo {
     float: none;
-    margin: 0 auto 10px auto; }
-
-  .fixed-top {
-    position: relative; }
+    margin: 0 auto 10px auto; 
+    position: relative;
+  }
 
   nav button {
     width: 100%; }
