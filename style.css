@@ -99,7 +99,7 @@ i {
 @media screen and (max-width: 460px) {
 
   .fixed-top {
-    margin-top: -7px;
+    margin-top: -15px;
     position: sticky;
   }
 
@@ -130,5 +130,3 @@ i {
     font-size: 50px; 
   } 
 }
-
-/*# sourceMappingURL=style.css.map */
