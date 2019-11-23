@@ -97,6 +97,11 @@ i {
   h6 {
     margin: 10px 0; } }
 @media screen and (max-width: 460px) {
+  body {
+    background-image: none;
+    background-color: black;
+  }
+  
 
   .fixed-top {
     margin-top: -15px;
