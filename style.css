@@ -41,7 +41,6 @@ body section {
 /* Jumbotron */
 /*Main Story */
 #jumbo {
-  height: 100vh;
   background-color: rgba(33, 33, 33, 0.2);
   margin-bottom: 0;
   overflow-x: hidden;
@@ -57,6 +56,7 @@ body section {
   z-index: 1;
   margin-bottom: 100px;
 }
+/* Main Story */
 #main-story {
   background-image: url("img/tectonic.jpg");
   background-repeat: no-repeat;
@@ -78,23 +78,65 @@ body section {
 #img-main-story {
   width: 500px;
 }
-#main-story-footer p, h2, h3, h5 {
+.jumbo-btn h5, p, h2, h3 {
   font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
   color: white;
 }
-#jumbo-btn {
+.jumbo-btn {
   color: white;
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0;
   padding: 0;
 }
-#jumbo-btn:hover {
+.jumbo-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+.jumbo-btn:visited {
   text-decoration: none;
 }
+/* Secondary Stories  */
+.secondary-story {
+  background-image: url("img/tectonic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 150px;
+  margin-top: 25px;
+}
+.secondary-story:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
+}
+.secondary-story-container {
+  height: 150px;
+  width: 20vw;
+  margin: 150px 0 0 0;
+  text-align: start;  
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.secondary-story:hover {
+  border-bottom: solid 10px #eed43e;
+}
+.img-secondary-story {
+  width: 250px;
+}
+
+.jumbo-btn-secondary h3, h5, a {
+  font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  color: black;
+}
+.jumbo-btn-secondary:hover {
+  text-decoration: none;
+  color: black;
+}
+
 /* Latest Stories */
 .story {
-  margin-top: 30px;
+  margin: 10px 0;
 }
 
 .story h6:hover {
@@ -108,8 +150,8 @@ body section {
   vertical-align: top;
 }
 
-.latest-story-showcase {
-  
+.story-wrapper {
+  width: 150px;
 }
 .container {
   padding-top: 100px; }
