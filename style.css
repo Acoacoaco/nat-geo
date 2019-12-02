@@ -1,18 +1,26 @@
 body {
-  background-image: url("img/ocean.jpg");
+  background-image: url("img/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+}
 
+/* Dark overlay over bg image */
+body section {  
+  background-color: rgba(33, 33, 33, 0.2);
+}
 .navbar {
-  background-color: black; }
+  background-color: black;
+}
   .navbar a {
-    color: white; }
+    color: white;
+  }
 
 /* Setting the stroke to green using rgb values (0, 128, 0) */
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
+/* VARIOUS LOGOTYPES OF NG */
 .logo1, .logo2 {
   float: left;
   margin: 5px 30px;
@@ -24,6 +32,85 @@ body {
   display: none;
 }
 
+.yellow-line {
+  border: 5px solid #eed43e;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+/* Jumbotron */
+/*Main Story */
+#jumbo {
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-bottom: 0;
+  overflow-x: hidden;
+}
+
+#jumbo p {
+  font-size: 1.7rem;
+  color: white;
+}
+#hr-x {
+  border: 5px solid #eed43e;
+  width: 200px;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+#main-story {
+  background-image: url("img/tectonic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vw;
+  height: 300px;
+}
+#main-story:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
+}
+#main-story-container {
+  height: 300px;
+  padding-top: 180px;
+  padding-left: 20px;
+  text-align: start;  
+  background-color: rgba(33, 33, 33, 0.3);
+}
+#img-main-story {
+  width: 500px;
+}
+#main-story-footer p, h2, h3, h5 {
+  font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  color: white;
+}
+#jumbo-btn {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+#jumbo-btn:hover {
+  text-decoration: none;
+}
+/* Latest Stories */
+.story {
+  margin-top: 30px;
+}
+
+.story h6:hover {
+  color: rgba(33, 33, 33, 0.3);
+}
+.story h6 {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 0 10px;
+  font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  vertical-align: top;
+}
+
+.latest-story-showcase {
+  
+}
 .container {
   padding-top: 100px; }
 
@@ -86,6 +173,8 @@ i {
 .contact2, .contact3 {
   margin-top: auto;
   margin-bottom: auto; }
+  
+/* Media Queries */
 
 @media screen and (max-width: 768px) {
   .carousel {
