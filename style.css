@@ -4,7 +4,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #FFD51C;
+}
 
+::selection {
+  color: white;
+  background: #FFD51C;
+}
 /* Dark overlay over bg image */
 body section {  
   background-color: rgba(33, 33, 33, 0.2);
@@ -26,18 +34,29 @@ body section {
   margin: 5px 30px;
   height: 50px;
   width: 40px;
-  border: #eed43e solid 4px; }
+  border: #FFD51C solid 4px; }
 
 .logo-top {
   display: none;
 }
 
 .yellow-line {
-  border: 5px solid #eed43e;
+  border: 5px solid #FFD51C;
   z-index: 1;
   margin-right: 15px;
 }
-
+/* Yellow bar on hover */
+.secondary-story:hover,
+.story:hover,
+#main-story:hover,
+.secondary-story-footer:hover,
+.nav-link:hover {
+  border-bottom: solid 10px #FFD51C;
+}
+.nav-link:hover {
+  border-bottom: solid 1px #FFD51C;
+  color: antiquewhite;
+}
 /* Jumbotron */
 /*Main Story */
 #jumbo {
@@ -51,16 +70,18 @@ body section {
   color: white;
 }
 #hr-x {
-  border: 5px solid #eed43e;
+  border: 5px solid #FFD51C;
   width: 200px;
   z-index: 1;
   margin-bottom: 100px;
 }
 /* Main Story */
-/* Yellow bar on hover */
-.secondary-story:hover, .story:hover, #main-story:hover {
-  border-bottom: solid 10px #eed43e;
+
+#small-header {
+  display: none
 }
+
+/* //////////////////////// */
 #main-story {
   background-image: url("img/tectonic.jpg");
   background-repeat: no-repeat;
@@ -76,9 +97,7 @@ body section {
   height: 300px;
   padding-top: 180px;
   padding-left: 20px;
-  text-align: start;  
-  z-index: 1;
-  background-color: rgba(33, 33, 33, 0.3);
+  text-align: start;
 }
 #img-main-story {
   width: 500px;
@@ -102,31 +121,44 @@ body section {
   text-decoration: none;
 }
 /* Secondary Stories  */
-.secondary-story {
+/* .secondary-story {
+ background-image: url("img/gejzer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19vw;
+  height: 150px;
+  margin: 25px 2vw 0 0; 
+} */
+#first-pic {
   background-image: url("img/gejzer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 19vw;
   height: 150px;
-  margin: 25px 2vw 0 0;
+  margin: 25px 0 0 0;
 }
-#first-pic {
 
+.margin-right {
+  margin-right: 2vw;
 }
 #second-pic {
-  
+  background-image: url("img/climate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19vw;
+  height: 150px;
+  margin: 25px 0 0 0;
 }
-.secondary-story:hover {
+.secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
 }
-.secondary-story-container {
+.secondary-story-footer {
   height: 220px;
   width: 19vw;
-  margin: 150px 0 0 0;
   text-align: start;  
   background-color: rgb(255, 255, 255);
-  padding: 10px;
+  padding: 30px 10px 0 10px;
 }
 
 
@@ -149,7 +181,7 @@ body section {
 }
 
 .story h6:hover {
-  color: rgba(33, 33, 33, 0.3);
+  color: antiquewhite;
 }
 .story h6 {
   display: inline-block;
@@ -159,8 +191,10 @@ body section {
   vertical-align: top;
 }
 
-.story-wrapper {
-  width: 150px;
+.text-field
+{
+  width: 350px;
+  height: auto;
 }
 .container {
   padding-top: 100px; }
@@ -198,7 +232,7 @@ p {
 .obrazek {
   width: 100%;
   margin-bottom: 2px;
-  border-top: #eed43e solid 10px; }
+  border-top: #FFD51C solid 10px; }
 
 .btn-dark {
   background-color: black; }
@@ -216,7 +250,7 @@ footer {
   margin-top: 20px; }
 
 i {
-  color: #eed43e;
+  color: #FFD51C;
   border: none; }
   i:hover {
     text-decoration: none; }
@@ -226,6 +260,30 @@ i {
   margin-bottom: auto; }
   
 /* Media Queries */
+@media screen and (max-width: 460px) {
+  #small-header {
+    display: inline
+  }
+  #big-header {
+    display: none;
+  }
+  #main-story {
+    width: 100vw;
+  }
+  #main-story:hover,.secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
+    transform: scale(1);
+  }
+  #main-story-container {
+    padding: 40% 10px 0;
+  }
+  #first-story-hover, #first-pic, #second-pic, .secondary-story-footer {
+    width: 48vw;
+  }
+  .jumbo-btn-secondary a, h5, h3 {
+    font-size: 1rem;
+  }
+
+}
 
 @media screen and (max-width: 768px) {
   .carousel {

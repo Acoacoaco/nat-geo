@@ -53,7 +53,8 @@
 
 <div class="jumbotron jumbotron-fluid" id="jumbo">
   <div class="container text-center">
-    <h1 class="display-1 font-weight-bold">EXPLORE TODAY</h1>
+    <h1 class="display-1 font-weight-bold" id="big-header">EXPLORE TODAY</h1>
+    <h2 class="display-4 font-weight-bold" id="small-header">EXPLORE TODAY</h2>
     <p class="lead ">Through the eyes of our Explorers, photographers, journalists, and filmmakers</p>
     <hr id="hr-x">
   </div>
@@ -71,23 +72,22 @@
         <div class="story p-2 bd-highlight">
           <img src="https://via.placeholder.com/100" alt="">
           <a href="">
-            <h6 class="text-left">PHOTOGRAPHY<br>The best photos of 2019</h6>
+            <h6 class="text-left text-field">PHOTOGRAPHY<br>The best photos of 2019</h6>
           </a>
         </div>
         <!--A story-->
         <div class="story p-2 bd-highlight">
           <img src="https://via.placeholder.com/100" alt="">      
-          <span class="story-wrapper">
-            <h6 class="text-left"><a href=""></a>ANIMALS<br>Coyotes have expanded their range to 49 states- and show no signs
+          <a href=""><h6 class="text-left text-field">         
+              ANIMALS<br>Coyotes have expanded their range to 49 states- and show no signs
               of...</h6></a>
-          </span>
       
         </div>
         <!--A story-->
         <div class="story p-2 bd-highlight">
           <img src="https://via.placeholder.com/100" alt="">
           <a href="">
-            <h6 class="text-left">SCIENCE<br>See our favorite space pictures from 2019</h6>
+            <h6 class="text-left text-field">SCIENCE<br>See our favorite space pictures from 2019</h6>
           </a>
         </div>
         <!---->
@@ -95,7 +95,7 @@
         <div class="story p-2 bd-highlight">
             <img src="https://via.placeholder.com/100" alt="">
             <a href="">
-              <h6 class="text-left">HISTORY<br>The U.S. cranberry harvest explained in four charts</h6>
+              <h6 class="text-left text-field">HISTORY<br>The U.S. cranberry harvest explained in four charts</h6>
             </a>
           </div>
           <!---->
@@ -103,7 +103,7 @@
         <div class="story p-2 bd-highlight">
             <img src="https://via.placeholder.com/100" alt="">
             <a href="">
-              <h6 class="text-left">ANIMALS<br>New leaf-toed geckos found living on remote volcano</h6>
+              <h6 class="text-left text-field">ANIMALS<br>New leaf-toed geckos found living on remote volcano</h6>
             </a>
           </div>
           <!---->
@@ -112,8 +112,8 @@
       
       </div>
 <!--Main Story on right-->
-    <div class="col-md-4">
-      <div id="main-story">
+    <div class="col-12 col-md-4 ">
+      <div id="main-story" class=>
         <div class="info" id="main-story-container">
           <div id="main-story-footer">
             <a class="jumbo-btn" href="#">
@@ -124,45 +124,39 @@
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row bd-highlight">
+<!--SECONDARY STORIES CONTAINER-->
+<div class="d-inline-flex flex-row bd-highlight justify-content-between">
+  <!--SECONDARY STORIES-->
+  <div class=" bd-highlight margin-right" >
+    <div id="first-story-hover">
+      <div class="secondary-story-container" id="first-pic"></div>
+      <div class="secondary-story-footer">
+        <a class="jumbo-btn-secondary" href="#">
+          <h5>TRAVEL</h5>
+          <h3>These amazing photos will inspire your travels in 2020</h3>
+          SEE PHOTOS
+        </a>
+      </div>
+    </div>
+  </div>
 
-          <div class="secondary-story bd-highlight">
-              <div class="secondary-story-container">
-                <div class="secondary-story-footer" id="first-pic">
-                  <a class="jumbo-btn-secondary" href="#">
-                    <h5>TRAVEL</h5>
-                    <h3>These amazing photos will inspire your travels in 2020</h3>
-                    SEE PHOTOS
-                  </a>
-                </div>
-              </div>
-          </div>
+  <div class="bd-highlight" id="right-story">
+    <!--SECONDARY STORIES-->
+    <div id="secondary-story-hover">
 
-          <div class="secondary-story bd-highlight">
-              <div class="secondary-story-container" id="second-pic">
-                <div class="secondary-story-footer">
-                  <a class="jumbo-btn-secondary" href="#">
-                    <h5>SCIENCE</h5>
-                    <h3>Climate change driving entire planet to dangerous 'tipping point'</h3>
-                    READ
-                  </a>
-                </div>
-              </div>
-          </div>
-
-
-
+      <div class="secondary-story-container" id="second-pic"></div>
+      <div class="secondary-story-footer">
+        <a class="jumbo-btn-secondary" href="#">
+          <h5>SCIENCE</h5>
+          <h3>Climate change driving entire planet to dangerous 'tipping point'</h3>
+          READ
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
-
-
-      
-
-
-
-
-
-
-    </div> <!---->
+</div>
+<!---->
   </div>
 </div>
 
@@ -488,7 +482,7 @@
             </div>
             <div class="col-md-6 col-lg-4 contact3">
               <br/>
-              <p>Web design by Acoacoaco</p>
+              <p>Web design by Acoacoaco & Ukwial</p>
             </div>
           </div>
         </div>
