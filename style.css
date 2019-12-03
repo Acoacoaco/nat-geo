@@ -86,19 +86,24 @@ body section {
   background-image: url("img/tectonic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 40vw;
   height: 300px;
+  margin-top: 10px;
 }
 #main-story:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
 }
 #main-story-container {
   height: 300px;
-  padding-top: 180px;
-  padding-left: 20px;
+  padding-top: 152px;
+  padding-left: 5px;
   text-align: start;
 }
+
+#main-story button, #side-story button {
+  margin-bottom: 5px;
+}
+
 #img-main-story {
   width: 500px;
 }
@@ -133,7 +138,6 @@ body section {
   background-image: url("img/gejzer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 19vw;
   height: 150px;
   margin: 25px 0 0 0;
 }
@@ -145,22 +149,18 @@ body section {
   background-image: url("img/climate.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 19vw;
   height: 150px;
   margin: 25px 0 0 0;
 }
 .secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
 }
 .secondary-story-footer {
-  height: 220px;
-  width: 19vw;
-  text-align: start;  
-  background-color: rgb(255, 255, 255);
-  padding: 30px 10px 0 10px;
+  text-align: start;
+  padding: 10px 10px 10px 0;
+  color: white;
 }
-
 
 .img-secondary-story {
   width: 250px;
@@ -168,7 +168,7 @@ body section {
 
 .jumbo-btn-secondary h3, h5, a {
   font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
-  color: black;
+  color: white;
 }
 .jumbo-btn-secondary:hover {
   text-decoration: none;
@@ -193,7 +193,7 @@ body section {
 
 .text-field
 {
-  width: 350px;
+  /* width: 400px; */
   height: auto;
 }
 .container {
@@ -294,11 +294,12 @@ i {
 
   h6 {
     margin: 10px 0; } }
+
 @media screen and (max-width: 460px) {
-  body {
+  /* body {
     background-image: none;
     background-color: black;
-  }
+  } */
   
 
   .fixed-top {
