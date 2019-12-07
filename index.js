@@ -1,18 +1,19 @@
-function sec2time(timeInSeconds) {
-    var pad = function(num, size) { return ('000' + num).slice(size * -1); },
-    time = parseFloat(timeInSeconds).toFixed(3),
-    minutes = Math.floor(time / 60) % 60,
-    seconds = Math.floor(time - minutes * 60);
+function timeFormat(timeInSeconds) {
+    var pad = function(num, size) { 
+        return ('000' + num).slice(size * -1); 
+    },
+    minutes = Math.floor(timeInSeconds / 60) % 60,
+    seconds = Math.floor(timeInSeconds - minutes * 60);
  
     return pad(minutes, 2) + ':' + pad(seconds, 2);
 }
 
-var seconds = 1201;
+var seconds = 12;
 setInterval(function() {
     --seconds;
-    document.getElementById("countdown").textContent = sec2time(seconds);
+    document.getElementById("countdown").textContent = timeFormat(seconds);
     if (seconds <= 0) {
-        seconds = 1201;
+        seconds = 12;
     };
 }, 1000);
 
