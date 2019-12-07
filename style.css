@@ -45,6 +45,28 @@ body section {
   z-index: 1;
   margin-right: 15px;
 }
+
+/* fixed counter */
+.counter {
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+}
+
+.counter p {
+  color: white;
+}
+
+#countdown {
+  text-align: center;
+  margin-bottom: 0;
+  color:#FFD51C;
+}
+
 /* Yellow bar on hover */
 .secondary-story:hover,
 .story:hover,
@@ -70,7 +92,7 @@ body section {
   color: white;
 }
 #hr-x {
-  border: 5px solid #FFD51C;
+  border-bottom: 7px solid #FFD51C;
   width: 200px;
   z-index: 1;
   margin-bottom: 100px;

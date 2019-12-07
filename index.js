@@ -1,10 +1,7 @@
-let timer; 
-let startValueSeconds = 120;
-
-
-
-while (timer !== 0) {
-    timer = --startValueSeconds;
-    console.log(startValueSeconds);
-}
-
+var seconds = 121;
+var countdown = setInterval(function() {
+    seconds--;
+    var minutes;
+    document.getElementById("countdown").textContent = seconds + ' s';
+    if (seconds <= 0) clearInterval(countdown);
+}, 1000);
