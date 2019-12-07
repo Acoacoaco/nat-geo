@@ -60,14 +60,14 @@ body section {
 
 .counter p {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 #countdown {
   text-align: center;
   margin-bottom: 0;
   color:#FFD51C;
-  font-size: large;
+  font-size: x-large;
 }
 
 /* Yellow bar on hover */
