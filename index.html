@@ -17,13 +17,13 @@
   </head>
   <body>
     <div class="logo-top">
-      <div class="logo2"></div>
+      <a href="#"><div class="logo2"></div></a>
     </div>
       
 
     <nav class="navbar navbar-expand-md fixed-top"> 
       
-      <div class="logo1"></div>
+      <a href="#"><div class="logo1"></div></a>
       
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -34,7 +34,10 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-            <a class="nav-link" href="#">Aquatic</a>
+              <a class="nav-link" href="#news">News</a>
+            </li>
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" href="#aquatic">Aquatic</a>
           </li>
           <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
             <a class="nav-link" href="#land">Land</a>
@@ -47,8 +50,126 @@
           </li>
         </ul>
       </div>
-    </nav>    
+    </nav>  
 
+    <!-- Counter -->
+    <div class="counter" id="counterPopUp">
+      <p id="x-btn">X</p>
+      <p>Time till one species extinction:</p>
+      <!-- <p id="timer"></p> -->
+      <p id="countdown"></p>
+    </div>
+
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+      <div class="container text-center">
+        <h1 class="display-1 font-weight-bold" id="big-header">EXPLORE TODAY</h1>
+        <h2 class="display-4 font-weight-bold" id="small-header">EXPLORE TODAY</h2>
+        <p class="lead ">Through the eyes of our Explorers, photographers, journalists, and filmmakers</p>
+        <hr id="hr-x">
+      </div>
+    </div>
+    <!-- News -->
+    <section id="news">
+      <div class="container">
+        <!--Latest and Main Stories-->
+        <div class="row justify-content-center">
+          <!--Latest stories on left-->
+          <div class="col-md-6">
+            <!--Header Latest Stories-->
+            <h2 class="display-5"><span class="yellow-line"></span> LATEST STORIES</h2>
+            <!---->
+            <div class="d-flex flex-column bd-highlight">
+              <!--A story-->
+              <div class="story p-2 bd-highlight">
+                <img src="https://via.placeholder.com/100" alt="">
+                <a href="">
+                  <h6 class="text-left text-field">PHOTOGRAPHY<br>The best photos of 2019</h6>
+                </a>
+              </div>
+              <!--A story-->
+              <div class="story p-2 bd-highlight">
+                <img src="https://via.placeholder.com/100" alt="">      
+                <a href="">
+                  <h6 class="text-left text-field">ANIMALS<br>Coyotes have expanded their range</h6>
+                </a>
+              </div>
+              <!--A story-->
+              <div class="story p-2 bd-highlight">
+                <img src="https://via.placeholder.com/100" alt="">
+                <a href=""><h6 class="text-left text-field">SCIENCE<br>See our favorite space pictures from 2019</h6>
+                </a>
+              </div>
+              <!---->
+              <!--A story-->
+              <div class="story p-2 bd-highlight">
+                <img src="https://via.placeholder.com/100" alt="">
+                <div><a href="">
+                  <h6 class="text-left text-field">HISTORY<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis minus provident laboriosam voluptates repellendus distinctio eveniet quod perspiciatis et ad dolorum voluptas dolores ducimus, molestias quaerat earum est! Laudantium.The U.S. cranberry harvest explained in four charts</h6>
+                </a></div>
+              </div>
+                <!---->
+              <!--A story-->
+              <div class="story p-2 bd-highlight">
+                <img src="https://via.placeholder.com/100" alt="">
+                <a href=""><h6 class="text-left text-field">ANIMALS<br>New leaf-toed geckos found living on remote volcano</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--Main Story on right-->
+          <div class="col-md-6">
+            <div id="main-story">
+              <div class="info" id="main-story-container">
+                <div id="main-story-footer">
+                  <a class="jumbo-btn" href="#">
+                    <button type="button" class="btn btn-warning">Read more</button>
+                    <button type="button" class="btn btn-dark">Date</button>  
+                    <h5>SCIENCE</h5>
+                    <h3>Mysterious tectonic fault zone found off California</h3>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <!--SECONDARY STORIES CONTAINER-->
+            <div class="d-inline-flex flex-row bd-highlight justify-content-between" id="side-story">
+              <!--SECONDARY STORIES-->
+              <div class=" bd-highlight margin-right" >
+                <div id="first-story-hover">
+                  <div class="secondary-story-container" id="first-pic"></div>
+                  <div class="secondary-story-footer">
+                    <a class="jumbo-btn-secondary" href="#">
+                      <button type="button" class="btn btn-warning">Read more</button>
+                      <button type="button" class="btn btn-dark">Date</button>
+                      <h5>TRAVEL</h5>
+                      <h3>These amazing photos will inspire your travels in 2020</h3>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bd-highlight" id="right-story">
+                <!--SECONDARY STORIES-->
+                <div id="secondary-story-hover">
+                  <div class="secondary-story-container" id="second-pic"></div>
+                  <div class="secondary-story-footer">
+                    <a class="jumbo-btn-secondary" href="#">
+                      <button type="button" class="btn btn-warning">Read more</button>
+                      <button type="button" class="btn btn-dark">Date</button>  
+                      <h5>SCIENCE</h5>
+                      <h3>Climate change driving planet to 'tipping point'</h3>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Animal Section Aquatic-->
     <section id="aquatic">
       <div class="container">
         <div class="row">
@@ -148,6 +269,7 @@
       </div>
     </section>
 
+    <!--Animal Section Land-->
     <section id="land">
       <div class="container">
         <div class="row">
@@ -241,6 +363,7 @@
       </div>
     </section>
 
+    <!--Animal Section Airborne-->
     <section id="airborne">
       <div class="container">
         <div class="row">
@@ -340,6 +463,7 @@
       </div>
     </section>
 
+    <!--Footer-->
     <section id="contact">
       <footer>
         <div class="container-fluid">
@@ -367,16 +491,15 @@
             </div>
             <div class="col-md-6 col-lg-4 contact3">
               <br/>
-              <p>Web design by Acoacoaco</p>
+              <p>Web design by Acoacoaco & Ukwial</p>
             </div>
           </div>
         </div>
       </footer>
-    </section>
-
-    
+    </section>   
 
     <!-- Optional JavaScript -->
+    <script src="index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
