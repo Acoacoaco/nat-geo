@@ -1,3 +1,4 @@
+// timeformat 
 function timeFormat(timeInSeconds) {
     var pad = function(num, size) { 
         return ('000' + num).slice(size * -1); 
@@ -8,6 +9,7 @@ function timeFormat(timeInSeconds) {
     return pad(minutes, 2) + ':' + pad(seconds, 2);
 }
 
+// time to extict
 var seconds = 12;
 setInterval(function() {
     --seconds;
@@ -17,7 +19,7 @@ setInterval(function() {
     };
 }, 1000);
 
-
+// countdown closer
 const btnX = document.getElementById('x-btn');
 const counterPopUp = document.getElementById('counterPopUp');
 
