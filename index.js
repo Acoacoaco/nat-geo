@@ -18,5 +18,11 @@ setInterval(function() {
 }, 1000);
 
 
+const btnX = document.getElementById('x-btn');
+const counterPopUp = document.getElementById('counterPopUp');
 
+function closeCounter() {
+    counterPopUp.hidden = true;
+}
 
+btnX.addEventListener('click',closeCounter);
