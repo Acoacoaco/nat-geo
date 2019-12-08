@@ -1,0 +1,22 @@
+
+footer {
+    background-color: black;
+    padding-bottom: 10px; }
+  
+  .phone, .home, .mail {
+    height: 30px;
+    float: left;
+    padding-right: 4px; }
+  
+  .home {
+    margin-top: 20px; }
+  
+  i {
+    color: #FFD51C;
+    border: none; }
+    i:hover {
+      text-decoration: none; }
+  
+  .contact2, .contact3 {
+    margin-top: auto;
+    margin-bottom: auto; }

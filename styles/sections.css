@@ -1,0 +1,27 @@
+
+.carousel {
+    margin-top: 70px; }
+  
+  .caption {
+    text-align: left; }
+    .caption h1 {
+      font-size: 62px; }
+  
+  p {
+    color: gray; }
+  
+  .block {
+    margin: auto;
+    margin-top: 21vh;
+    height: 25vh; }
+  
+  .info {
+    margin-bottom: 15px; }
+  
+  .obrazek {
+    width: 100%;
+    margin-bottom: 2px;
+    border-top: #FFD51C solid 10px; }
+  
+  .btn-dark {
+    background-color: black; }
