@@ -1,27 +1,5 @@
  
 /* Media Queries */
-@media screen and (max-width: 460px) {
-  #small-header {
-    display: inline
-  }
-  #big-header {
-    display: none;
-  }
-  
-  #main-story:hover,.secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
-    transform: scale(1);
-  }
-  #main-story-container {
-    padding: 40% 10px 0;
-  }
-  /* #first-story-hover, #first-pic, #second-pic, .secondary-story-footer {
-    width: 48vw; */
-  /* } */
-  .jumbo-btn-secondary a, h5, h3 {
-    font-size: 1rem;
-  }
-
-}
 
 @media screen and (max-width: 768px) {
   .carousel {
@@ -34,6 +12,24 @@
     margin: 10px 0; } }
 
 @media screen and (max-width: 460px) {
+  #small-header {
+    display: inline
+  }
+  #big-header {
+    display: none;
+  }
+  
+  #main-story:hover,.secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
+    transform: scale(1);
+  }
+
+  #main-story-container {
+    padding-top: 180px;
+  }
+  
+  .jumbo-btn-secondary a, h5, h3 {
+    font-size: 1rem;
+  }
   
   .counter {
     display: none;

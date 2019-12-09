@@ -36,7 +36,7 @@
 
 /* //////////////////////// */
 #main-story {
-  background-image: url("../img/tectonic.jpg");
+  background-image: url("../img/cave.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -81,7 +81,7 @@
 /* Secondary Stories  */
 
 #first-pic {
-  background-image: url("../img/gejzer.jpg");
+  background-image: url("../img/drip.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -126,12 +126,17 @@
   margin: 10px 0;
 }
 
+.story img {
+  width: 100px;
+  height: 100px;
+}
+
 .story h6:hover {
   color: antiquewhite;
 }
 .story h6 {
   display: inline-block;
-  margin: 0;
+  margin: 30px 0 0 0;
   padding: 0 0 0 10px;
   font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
   vertical-align: top;

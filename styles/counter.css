@@ -7,7 +7,7 @@
     bottom: 30px;
     right: 30px;
     z-index: 1;
-    height: 100px;
+    height: 82px;
   }
   
   .counter p {  
@@ -25,10 +25,11 @@
   #x-btn {
     font-size: 1.3rem;
     position: fixed;
-    bottom: 105px;
-    right: 25px;
+    bottom: 92px;
+    right: 23.5px;
   }
+  
   #x-btn:hover {
     cursor: pointer;
-    background-color: #FFD51C;
+    color: #FFD51C;
   }
