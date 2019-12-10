@@ -9,7 +9,17 @@
     float: none; }
 
   h6 {
-    margin: 10px 0; } }
+    margin: 10px 0; } 
+
+  .info:hover {
+    transform: scale(1.00);
+  }
+
+  body {
+    background-size: contain;
+  }
+}
+
 
 @media screen and (max-width: 460px) {
   #small-header {
