@@ -13,6 +13,7 @@
 
   .info:hover {
     transform: scale(1.00);
+    box-shadow: 5px 5px 5px 5px rgba(100,100,100,0.6);
   }
 
   body {
