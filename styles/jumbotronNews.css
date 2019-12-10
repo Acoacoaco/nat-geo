@@ -126,17 +126,19 @@
   height: 100px;
 }
 
-.img-on-left {
-  padding-left: 7.5px;
-}
-
 .story h6:hover {
   color: antiquewhite;
 }
+.vertical-center {
+  align-items: top;
+}
+
 .story h6 {
   display: inline-block;
-  margin: 30px 0 0 0;
-  padding: 0 0 0 10px;
   font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
-  vertical-align: top;
 }
+
+.col-4 {
+  min-width: 100px;
+}
+

@@ -1,46 +1,55 @@
 
 body {
-    background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  ::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: #FFD51C;
-  }
-  
-  ::selection {
-    color: white;
-    background: #FFD51C;
-  }
-  /* Dark overlay over bg image */
-  body section {  
-    background-color: rgba(33, 33, 33, 0.2);
-  }
-  .navbar {
-    background-color: black;
-  }
-    .navbar a {
-      color: white;
-    }
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #FFD51C;
+}
+
+::selection {
+  color: white;
+  background: #FFD51C;
+}
+/* Dark overlay over bg image */
+body section {  
+  background-color: rgba(33, 33, 33, 0.2);
+}
+.navbar {
+  background-color: black;
+}
+
+.navbar a {
+  color: white;
+}
     
-.text-field
-{
-  /* width: 400px; */
+.text-field {
   height: auto;
 }
+
 .container {
-  padding-top: 100px; }
+  padding-top: 100px; 
+}
 
 .transparent-item {
   height: 300px;
   overflow: hidden;
-  display: block; }
+  display: block; 
+}
 
 h1, h3, h6 {
-  color: white; }
+  color: white; 
+}
 
-h6 {
-  margin: 10px 0 10px 27px; }
+.dane h6 {
+  margin-top: 10px;
+}

@@ -3,16 +3,15 @@
 
 @media screen and (max-width: 768px) {
   .carousel {
-    margin-top: 0; }
+    margin-top: 0; 
+  }
 
   .phone, .home, .mail {
-    float: none; }
-
-  h6 {
-    margin: 10px 0; } 
+    float: none; 
+  }
 
   .info:hover {
-    transform: scale(1.00);
+    transform: scale(1.05);
     box-shadow: 5px 5px 5px 5px rgba(100,100,100,0.6);
   }
 
