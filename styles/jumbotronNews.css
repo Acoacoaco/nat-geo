@@ -129,9 +129,6 @@
 .story h6:hover {
   color: antiquewhite;
 }
-.vertical-center {
-  align-items: top;
-}
 
 .story h6 {
   display: inline-block;
