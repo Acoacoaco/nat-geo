@@ -10,12 +10,14 @@ function timeFormat(timeInSeconds) {
 }
 
 // time to extict
-var seconds = 12;
+var initialSeconds, seconds;
+initialSeconds = 1200;
+seconds = initialSeconds;
 setInterval(function() {
-    --seconds;
+    seconds--;
     document.getElementById("countdown").textContent = timeFormat(seconds);
     if (seconds <= 0) {
-        seconds = 12;
+        seconds = initialSeconds;
     };
 }, 1000);
 

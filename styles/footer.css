@@ -4,16 +4,21 @@ footer {
   padding-bottom: 10px; 
 }
   
-.dane h6 {
-  margin-left: 65.15px;
+.dane p, .dane h6 {
+  margin-left: 15px;
 }
 
 .dane i {
   float: left;
+  margin-right: -70px;
 }
   
 .fa-home {
-  margin-top: 20px; 
+  margin-top: 18px; 
+}
+
+.fa-envelope {
+  margin-top: -3px;
 }
   
 i {
@@ -26,7 +31,10 @@ i:hover {
   text-decoration: none; 
 }
 
-.contact2, .contact3 {
-  margin-top: auto;
-  margin-bottom: auto; 
+.contact2 div, .contact3 p {
+  margin: 65px 0;
+}
+
+footer h6, .dane h6 {
+  margin-top: 25px;
 }
