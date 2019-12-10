@@ -24,12 +24,24 @@ body {
 body section {  
   background-color: rgba(33, 33, 33, 0.2);
 }
-.navbar {
+.navbar, .dropdown-menu {
   background-color: black;
 }
 
-.navbar a {
+.navbar a, .dropdown-menu a {
   color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: black;
+}
+
+#navbardrop {
+  color:white;
+}
+
+#navbardrop:hover {
+  cursor: pointer;
 }
     
 .text-field {

@@ -4,7 +4,7 @@
   transform: scale(1.05);
   box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6);
 }
-.nav-link:hover {
+.nav-link:hover, #navbardrop:hover, .dropdown-item:hover {
   border-bottom: solid 1px #FFD51C;
   color: antiquewhite;
 }
