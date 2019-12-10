@@ -17,7 +17,7 @@ p {
   height: 25vh; }
 
 .info {
-  margin: 0 15px 0 0;
+  margin-bottom: 15px;
 }
 
 .info:hover {
