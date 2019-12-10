@@ -1,10 +1,8 @@
 /* Yellow bar on hover */
-.secondary-story:hover,
-.story:hover,
-#main-story:hover,
-.secondary-story-footer:hover,
-.nav-link:hover {
-  border-bottom: solid 10px #FFD51C;
+.story:hover, #main-story:hover, .secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
+  border-top: solid 10px #FFD51C;
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6);
 }
 .nav-link:hover {
   border-bottom: solid 1px #FFD51C;
@@ -40,12 +38,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
-  margin-top: 10px;
+  margin: 15px 0;
 }
-#main-story:hover {
-  transform: scale(1.05);
-  box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
-}
+
 #main-story-container {
   height: 300px;
   padding-top: 152px;
@@ -85,7 +80,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
-  margin: 25px 0 0 0;
 }
 
 .margin-right {
@@ -96,12 +90,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
-  margin: 25px 0 0 0;
 }
-.secondary-story:hover, #first-story-hover:hover, #secondary-story-hover:hover {
-  transform: scale(1.05);
-  box-shadow: 5px 5px 15px 5px rgba(100,100,100,0.6)
-}
+
 .secondary-story-footer {
   text-align: start;
   padding: 10px 10px 10px 0;
@@ -116,6 +106,11 @@
   font-family: CenturyGothic, AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
   color: white;
 }
+
+.jumbo-btn-secondary h3 {
+  margin: 0;
+}
+
 .jumbo-btn-secondary:hover {
   text-decoration: none;
   color: black;
@@ -129,6 +124,10 @@
 .story img {
   width: 100px;
   height: 100px;
+}
+
+.img-on-left {
+  padding-left: 7.5px;
 }
 
 .story h6:hover {
