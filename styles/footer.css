@@ -1,22 +1,32 @@
 
 footer {
-    background-color: black;
-    padding-bottom: 10px; }
+  background-color: black;
+  padding-bottom: 10px; 
+}
   
-  .phone, .home, .mail {
-    height: 30px;
-    float: left;
-    padding-right: 4px; }
+.dane h6 {
+  margin-left: 65.15px;
+}
+
+.dane i {
+  float: left;
+}
   
-  .home {
-    margin-top: 20px; }
+.fa-home {
+  margin-top: 20px; 
+}
   
-  i {
-    color: #FFD51C;
-    border: none; }
-    i:hover {
-      text-decoration: none; }
-  
-  .contact2, .contact3 {
-    margin-top: auto;
-    margin-bottom: auto; }
+i {
+  margin: 0 20px;
+  color: #FFD51C;
+  border: none; 
+}
+
+i:hover {
+  text-decoration: none; 
+}
+
+.contact2, .contact3 {
+  margin-top: auto;
+  margin-bottom: auto; 
+}
