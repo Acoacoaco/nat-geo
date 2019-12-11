@@ -19,24 +19,27 @@
             <div id="answers">
                 <label class="container">
                     <p id="answer-a">This in an answer A</p>
-                    <input type="radio" name="answer" value="A">
+                    <input id="input-a" type="radio" name="answer" value="A">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
                     <p id="answer-b">This in an answer B</p>
-                    <input type="radio" name="answer" value="B">
+                    <input id="input-b" type="radio" name="answer" value="B">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
                     <p id="answer-c">This in an answer C</p>
-                    <input type="radio" name="answer" value="C">
+                    <input id="input-c" type="radio" name="answer" value="C">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">
                     <p id="answer-d">This in an answer D</p>
-                    <input type="radio" name="answer" value="D">
+                    <input id="input-d" type="radio" name="answer" value="D">
                     <span class="checkmark"></span>
                 </label>
+            </div>
+            <div id="checkedAnswer">
+                <p id="message" >Here you will see if the answer is <span id="right">RIGHT</span> or <span id="wrong">WRONG</span>.</p>
             </div>
         </div>
         <button id="checkAnswerBtn" onclick="answerCheck()" type="button" class="btn btn-warning">Check your answer</button>

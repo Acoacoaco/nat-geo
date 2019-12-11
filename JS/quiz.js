@@ -8,17 +8,21 @@ const answerC = document.getElementById('answer-c');
 const answerD = document.getElementById('answer-d');
 let nextBtn = document.getElementById('nextQuestion');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
+let checkedAnswer = document.getElementById('checkedAnswer');
 
 const questionsArray = [
     ['AIRBORNE ANIMALS', 'Jak masz na imię?', 'Michał', 'Olek', 'Kuba', 'Łukasz'], 
     ['HISTORY', 'Jak się dziś masz?', 'Super', 'Spoko', 'Nijak', 'Chujowo'], 
     ['AQUATIC ANIMALS', 'Ile masz lat?', 'za dużo', 'Sto lat, sto lat, ...!', '21', 'za mało'], 
-    ['SCIENCE', 'Jak długo śpisz?', '12 minut', '10 godzin', '7 godzin'],
+    ['SCIENCE', 'Jak długo śpisz?', '12 minut', '10 godzin', '7 godzin', 'nic'],
     ['SCORE', 'Your score is:', 'a', 'b', 'c', 'd']
 ];
 let questionNum = 0;
 
+checkedAnswer.hidden = true;
+
 function nextQuestion(){
+    checkedAnswer.hidden = true;
     nextBtn.innerHTML = "Next question";
     category.innerHTML = questionsArray[questionNum][0];
     question.innerHTML = questionsArray[questionNum][1];
@@ -38,15 +42,47 @@ function nextQuestion(){
             break;
     }
 }
-//     if (questionNum == 4) {
-        
-//     } else if (questionNum == 5) {
-        
-//         answerA.hidden = true;
-
-//     }
-// }
 
 function answerCheck() {
-    alert('Here you will see if the answer is right or wrong!');
+    checkedAnswer.hidden = false;
+    switch (questionNum) {
+        case 1:
+            if(document.getElementById('input-c').checked) {
+                document.getElementById('message').innerHTML = 'RIGHT !';
+                document.getElementById('message').style.color = 'green';
+            }else {
+                document.getElementById('message').innerHTML = 'WRONG !';
+                document.getElementById('message').style.color = 'red';
+            }
+            break;
+        case 2:
+            if(document.getElementById('input-a').checked) {
+                document.getElementById('message').innerHTML = 'RIGHT !';
+                document.getElementById('message').style.color = 'green';
+            }else {
+                document.getElementById('message').innerHTML = 'WRONG !';
+                document.getElementById('message').style.color = 'red';
+            }
+            break;
+        case 3:
+            if(document.getElementById('input-d').checked) {
+                document.getElementById('message').innerHTML = 'RIGHT !';
+                document.getElementById('message').style.color = 'green';
+            }else {
+                document.getElementById('message').innerHTML = 'WRONG !';
+                document.getElementById('message').style.color = 'red';
+            }
+            break;
+        case 4:
+            if(document.getElementById('input-b').checked) {
+                document.getElementById('message').innerHTML = 'RIGHT !';
+                document.getElementById('message').style.color = 'green';
+            }else {
+                document.getElementById('message').innerHTML = 'WRONG !';
+                document.getElementById('message').style.color = 'red';
+            }
+            break;
+        case 5:
+            break;
+    }
 }

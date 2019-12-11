@@ -97,6 +97,29 @@ display: block;
     background: black;
 }
 
+#checkedAnswer {
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    width: 480px;
+    height: 260px;
+    border: 1px solid #FFD51C;
+    background-color: black;
+}
+
+#checkedAnswer p {
+    text-align: center;
+    font-size: 200%;
+}
+
+#right {
+    color:green;
+}
+
+#wrong {
+    color:red;
+}
+
 @media screen and (max-width: 500px) {
     section {
         width: 100vw;
