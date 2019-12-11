@@ -13,29 +13,34 @@
 </head>
 <body>
     <section id="quiz-frame">
-        <div class="question" id="question1">
-            <h1 id="title">Category: </h1>
-            <p id="question">Question</p>
-            <ul>
-                <li >
-                    <input type="radio" name="pytanie" value="1">  
-                    <p id="answer-a" for="answer-a">Answer A</p>
-                </li>
-                <li >
-                    <input type="radio" name="pytanie" value="1">  
-                    <p id="answer-b" for="answer-b">Answer B</p>
-                </li>
-                <li >
-                    <input type="radio" name="pytanie" value="1">  
-                    <p id="answer-c" for="answer-c">Answer C</p>
-                </li>
-                    <input type="radio" name="pytanie" value ="1">
-                    <p id="answer-d" for="answer-d">Answer D</p>
-                </li>
-            </ul>
+        <div class="question" id="questions">
+            <h2 id="category">This is a category</h2>
+            <p id="question">Here is a question</p>
+            <div id="answers">
+                <label class="container">
+                    <p id="answer-a">This in an answer A</p>
+                    <input type="radio" name="answer" value="A">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <p id="answer-b">This in an answer B</p>
+                    <input type="radio" name="answer" value="B">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <p id="answer-c">This in an answer C</p>
+                    <input type="radio" name="answer" value="C">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <p id="answer-d">This in an answer D</p>
+                    <input type="radio" name="answer" value="D">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
         </div>
-        <button id="submit-answers" type="button" class="btn btn-warning">Check your answer</button>
-        <button id="nextQuestion" onclick="nextQuestion()" type="button" class="btn btn-dark">Next question</button>
+        <button id="checkAnswerBtn" onclick="answerCheck()" type="button" class="btn btn-warning">Check your answer</button>
+        <button id="nextQuestion" onclick="nextQuestion()" type="button" class="btn btn-dark">Let's get started</button>
     </section>
 
     <!-- Optional JavaScript -->
