@@ -12,13 +12,13 @@ const questionsArray = [
     ['Jak długo śpisz?', '12 minut', '10 godzin', '7 godzin'],
     ['Twój wynik to:', '', '', '', '']
 ];
-let questionNum = -1;
+let questionNum = 0;
 
 function nextQuestion(){
-    ++questionNum;
     question.innerHTML = questionsArray[questionNum][0];
     answerA.innerHTML = questionsArray[questionNum][1];
     answerB.innerHTML = questionsArray[questionNum][2];
     answerC.innerHTML = questionsArray[questionNum][3];
     answerD.innerHTML = questionsArray[questionNum][4];
+    ++questionNum;
 }
