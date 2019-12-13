@@ -11,9 +11,9 @@ const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 let checkedAnswer = document.getElementById('checkedAnswer');
 
 const questionsArray = [
-    ['AIRBORNE ANIMALS', 'Jak masz na imię?', 'Michał', 'Olek', 'Kuba', 'Łukasz'], 
+    ['AIRBORNE', 'Jak masz na imię?', 'Michał', 'Olek', 'Kuba', 'Łukasz'], 
     ['HISTORY', 'Jak się dziś masz?', 'Super', 'Spoko', 'Nijak', 'Chujowo'], 
-    ['AQUATIC ANIMALS', 'Ile masz lat?', 'za dużo', 'Sto lat, sto lat, ...!', '21', 'za mało'], 
+    ['AQUATIC', 'Ile masz lat?', 'za dużo', 'Sto lat, sto lat, ...!', '21', 'za mało'], 
     ['SCIENCE', 'Jak długo śpisz?', '12 minut', '10 godzin', '7 godzin', 'nic'],
     ['SCORE', 'Your score is:', 'a', 'b', 'c', 'd']
 ];

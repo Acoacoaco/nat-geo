@@ -124,4 +124,12 @@ display: block;
     section {
         width: 100vw;
     }
+
+    #checkedAnswer {
+        width: 94%;
+    }
+
+    #checkedAnswer p {
+        font-size: 140%;
+    }
 }
