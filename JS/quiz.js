@@ -9,13 +9,14 @@ const answerD = document.getElementById('answer-d');
 let nextBtn = document.getElementById('nextQuestion');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
 let checkedAnswer = document.getElementById('checkedAnswer');
+let result = 0;
 
 const questionsArray = [
-    ['AIRBORNE', 'Jak masz na imię?', 'Michał', 'Olek', 'Kuba', 'Łukasz'], 
-    ['HISTORY', 'Jak się dziś masz?', 'Super', 'Spoko', 'Nijak', 'Chujowo'], 
-    ['AQUATIC', 'Ile masz lat?', 'za dużo', 'Sto lat, sto lat, ...!', '21', 'za mało'], 
-    ['SCIENCE', 'Jak długo śpisz?', '12 minut', '10 godzin', '7 godzin', 'nic'],
-    ['SCORE', 'Your score is:', 'a', 'b', 'c', 'd']
+    ['AIRBORNE', 'Which one of the listed animals is unable to fly?', 'Robin', 'Vampire Bat', 'Flying Monkey', 'Mosquito'], 
+    ['HISTORY', 'Pick the animal that have gone extinct in last 100 years.', 'Dodo', 'Sprat', 'Aedes albopictus', 'Siberian Cat'], 
+    ['AQUATIC', 'Which one one of the listed aquatic animals is a real-life animal?', 'Sea Camel', 'Nemo', 'Harlech', 'Crab'], 
+    ['SCIENCE', 'How many new animal and plant species were discovered in 2019?', '131', '71', '0', '11'],
+    ['SCORE', 'Your score:']
 ];
 let questionNum = 0;
 
@@ -39,6 +40,7 @@ function nextQuestion(){
             nextBtn.hidden = true;
             checkAnswerBtn.hidden = true;
             document.getElementById('answers').hidden = true;
+            document.getElementById('score').innerHTML = result + ' points!';
             break;
     }
 }
@@ -50,6 +52,7 @@ function answerCheck() {
             if(document.getElementById('input-c').checked) {
                 document.getElementById('message').innerHTML = 'RIGHT !';
                 document.getElementById('message').style.color = 'green';
+                ++result;
             }else {
                 document.getElementById('message').innerHTML = 'WRONG !';
                 document.getElementById('message').style.color = 'red';
@@ -59,6 +62,7 @@ function answerCheck() {
             if(document.getElementById('input-a').checked) {
                 document.getElementById('message').innerHTML = 'RIGHT !';
                 document.getElementById('message').style.color = 'green';
+                ++result;
             }else {
                 document.getElementById('message').innerHTML = 'WRONG !';
                 document.getElementById('message').style.color = 'red';
@@ -68,6 +72,7 @@ function answerCheck() {
             if(document.getElementById('input-d').checked) {
                 document.getElementById('message').innerHTML = 'RIGHT !';
                 document.getElementById('message').style.color = 'green';
+                ++result;
             }else {
                 document.getElementById('message').innerHTML = 'WRONG !';
                 document.getElementById('message').style.color = 'red';
@@ -77,6 +82,7 @@ function answerCheck() {
             if(document.getElementById('input-b').checked) {
                 document.getElementById('message').innerHTML = 'RIGHT !';
                 document.getElementById('message').style.color = 'green';
+                ++result;
             }else {
                 document.getElementById('message').innerHTML = 'WRONG !';
                 document.getElementById('message').style.color = 'red';
