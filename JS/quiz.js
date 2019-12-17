@@ -42,10 +42,10 @@ function nextQuestion(){
         case 5:
             nextBtn.hidden = false;
             nextBtn.innerHTML = 'Return to main site';
-            nextBtn.onclick = 'window.location.reload()';
+            nextBtn.setAttribute('onclick','location.href="index.html"');
             checkAnswerBtn.hidden = false;
             checkAnswerBtn.innerHTML = 'Start the quiz again';
-            checkAnswerBtn.onclick = 'window.location.reload()';
+            checkAnswerBtn.setAttribute('onclick','location.reload()');
             document.getElementById('answers').hidden = true;
             if (result == 1) {
                 document.getElementById('score').innerHTML = result + ' point!';
