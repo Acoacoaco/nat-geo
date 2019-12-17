@@ -6,9 +6,9 @@ const answerA = document.getElementById('answer-a');
 const answerB = document.getElementById('answer-b');
 const answerC = document.getElementById('answer-c');
 const answerD = document.getElementById('answer-d');
-let nextBtn = document.getElementById('nextQuestion');
+const nextBtn = document.getElementById('nextQuestion');
 const checkAnswerBtn = document.getElementById('checkAnswerBtn');
-let checkedAnswer = document.getElementById('checkedAnswer');
+const checkedAnswer = document.getElementById('checkedAnswer');
 let result = 0;
 
 const questionsArray = [
@@ -37,11 +37,15 @@ function nextQuestion(){
     ++questionNum;
     switch (questionNum) {
         case 4:
-            nextBtn.innerHTML = "Get your score";
+            nextBtn.innerHTML = 'Get your score';
             break;
         case 5:
-            nextBtn.hidden = true;
-            checkAnswerBtn.hidden = true;
+            nextBtn.hidden = false;
+            nextBtn.innerHTML = 'Return to main site';
+            nextBtn.onclick = 'window.location.reload()';
+            checkAnswerBtn.hidden = false;
+            checkAnswerBtn.innerHTML = 'Start the quiz again';
+            checkAnswerBtn.onclick = 'window.location.reload()';
             document.getElementById('answers').hidden = true;
             if (result == 1) {
                 document.getElementById('score').innerHTML = result + ' point!';
