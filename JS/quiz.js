@@ -13,9 +13,9 @@ let result = 0;
 
 const questionsArray = [
     ['AIRBORNE', 'Which one of the listed animals is unable to fly?', 'Robin', 'Vampire Bat', 'Flying Monkey', 'Mosquito'], 
-    ['HISTORY', 'Pick the animal that have gone extinct in last 100 years.', 'Dodo', 'Sprat', 'Aedes albopictus', 'Siberian Cat'], 
-    ['AQUATIC', 'Which one one of the listed aquatic animals is a real-life animal?', 'Sea Camel', 'Nemo', 'Harlech', 'Crab'], 
-    ['SCIENCE', 'How many new animal and plant species were discovered in 2019?', '131', '71', '0', '11'],
+    ['HISTORY', 'Pick the animal that have gone extinct in 2019.', 'Sumatran Rihno', 'Sprat', 'Aedes albopictus', 'Siberian Cat'], 
+    ['AQUATIC', 'Which one one of the listed aquatic animals is a real?', 'Sea Camel', 'Nemo', 'Harlech', 'Crab'], 
+    ['SCIENCE', 'How many new species were discovered in 2019?', '131', '71', '0', '11'],
     ['SCORE', 'Your score:']
 ];
 let questionNum = 0;
@@ -40,7 +40,11 @@ function nextQuestion(){
             nextBtn.hidden = true;
             checkAnswerBtn.hidden = true;
             document.getElementById('answers').hidden = true;
+            if (result == 1) {
+                document.getElementById('score').innerHTML = result + ' point!';
+            } else {
             document.getElementById('score').innerHTML = result + ' points!';
+            };
             break;
     }
 }
