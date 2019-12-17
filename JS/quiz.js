@@ -21,8 +21,11 @@ const questionsArray = [
 let questionNum = 0;
 
 checkedAnswer.hidden = true;
+nextBtn.hidden = true;
 
 function nextQuestion(){
+    nextBtn.hidden = true;
+    checkAnswerBtn.hidden = false;
     checkedAnswer.hidden = true;
     nextBtn.innerHTML = "Next question";
     category.innerHTML = questionsArray[questionNum][0];
@@ -50,6 +53,8 @@ function nextQuestion(){
 }
 
 function answerCheck() {
+    nextBtn.hidden = false;
+    checkAnswerBtn.hidden = true;
     checkedAnswer.hidden = false;
     switch (questionNum) {
         case 1:
